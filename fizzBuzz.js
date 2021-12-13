@@ -55,7 +55,8 @@ console.log(fizzBuzzTwo(100))
 // solution three
 const fizzBuzzArrayThree = []
 const fizzBuzzThree = (num) => {
-    for (let i = 1; i < 101;) console.log((i++ % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i)
+    for (let i = 1; i <= num; i++) 
+    fizzBuzzArrayThree.push((i % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i)
     return fizzBuzzArrayThree
 }
 
